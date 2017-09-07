@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.aprido.cintabogor.widget.CustomTextView
+        android:id="@+id/tv_title_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorBlack"
+        android:text="JUDUL"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:customButtonFont="HelveticaLTStd-LightCond.otf"
+        />
+
+    <com.aprido.cintabogor.widget.CustomButton
+        android:id="@+id/btn_close_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:text="Tutup"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/tv_title_about_us"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:customButtonFont="HelveticaLTStd-LightCond.otf"/>
+
+</RelativeLayout>

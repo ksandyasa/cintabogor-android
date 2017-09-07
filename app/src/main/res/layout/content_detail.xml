@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pict_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/anchor_point"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:contentDescription=""
+            android:layout_centerInParent="true"/>
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/tv_title_detail"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="1"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <RatingBar
+                android:id="@+id/rb_favorit_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.RatingBar"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="0.5"
+                android:scaleX=".6"
+                android:scaleY=".6"
+                android:transformPivotX="0dp"
+                android:transformPivotY="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_lokasi_detail"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="fitCenter"
+                android:contentDescription=""
+                android:src="@drawable/ic_map"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <com.aprido.cintabogor.widget.CustomTextView
+                android:id="@+id/tv_distance_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:text="@string/tv_dist_detail"
+                android:shadowColor="@color/colorBlack"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/iv_lokasi_detail"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                app:customFont="HelveticaLTStd-LightCond.otf"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_desc_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/tv_desc_detail"
+            android:gravity="left|center_vertical"
+            android:padding="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="@string/tv_address_detail"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:layout_below="@id/tv_desc_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_tulasan_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/tv_tulasan_detail"
+            android:gravity="left|center_vertical"
+            android:padding="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_vulasan_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="@string/tv_vulasan_detail"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:layout_below="@id/tv_tulasan_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

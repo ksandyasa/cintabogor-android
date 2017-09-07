@@ -1,0 +1,13 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <dimen name="anchor_point">325dp</dimen>
+    <dimen name="civ_pict_item_main">60dp</dimen>
+    <dimen name="civ_pict_item_nearby">88dp</dimen>
+    <dimen name="iv_pict_item_navigationview">36dp</dimen>
+    <dimen name="header_navigation_view">228dp</dimen>
+    <dimen name="list_item_content_list_height">304dp</dimen>
+</resources>

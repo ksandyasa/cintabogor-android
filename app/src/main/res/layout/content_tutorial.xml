@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:weightSum="10"
+    android:gravity="center_horizontal" android:background="@color/colorLightAqua">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:overScrollMode="never"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <com.ugurtekbas.fadingindicatorlibrary.FadingIndicator
+        android:id="@+id/fi_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:padding="10dp"
+        app:radius="5dp"
+        app:fillColor="@color/colorWhite"
+        app:strokeColor="@android:color/transparent"
+        app:shape="@string/shape_circle"
+        />
+
+</LinearLayout>

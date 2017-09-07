@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingStart="8dp"
+    android:paddingEnd="8dp" android:paddingTop="8dp"
+    android:paddingBottom="8dp" android:gravity="center"
+    android:id="@+id/ll_container_item_nearby">
+
+    <LinearLayout
+        android:layout_width="@dimen/civ_pict_item_nearby"
+        android:layout_height="@dimen/civ_pict_item_nearby"
+        android:orientation="vertical"
+        android:layerType="software"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pict_item_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/placeholder"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center"
+            >
+
+            <com.aprido.cintabogor.widget.CustomTextView
+                android:id="@+id/tv_title_item_nearby"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Tempat Wisata"
+                android:gravity="left"
+                android:layout_marginLeft="8dp"
+                app:customFont="HelveticaLTStd-LightCond.otf"/>
+
+            <com.aprido.cintabogor.widget.CustomTextView
+                android:id="@+id/tv_dist_item_nearby"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:text="433.50 km"
+                android:gravity="right"
+                app:customFont="HelveticaLTStd-LightCond.otf"/>
+
+        </LinearLayout>
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_detail_item_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            app:customFont="HelveticaLTStd-LightCond.otf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

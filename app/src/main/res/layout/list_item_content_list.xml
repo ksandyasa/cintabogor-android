@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="@dimen/list_item_content_list_height"
+    android:id="@+id/rl_container_item_content_list"
+    android:paddingStart="4dp" android:paddingEnd="4dp"
+    android:paddingTop="4dp" android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/iv_pict_item_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription=""
+        android:src="@drawable/placeholder"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_title_item_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/tv_title_slide"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:padding="8dp"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+        <com.aprido.cintabogor.widget.CustomTextView
+            android:id="@+id/tv_dist_item_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tv_dist_item_content_list"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tv_title_item_content_list"
+            android:layout_centerHorizontal="true"
+            app:customFont="HelveticaLTStd-LightCond.otf"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

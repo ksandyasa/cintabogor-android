@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp" android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp" android:gravity="center"
+    android:id="@+id/ll_container_item_main"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/civ_pict_item_main"
+        android:layout_height="@dimen/civ_pict_item_main"
+        android:orientation="vertical"
+        android:layerType="software"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_pict_item_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_default_image"
+            />
+
+    </LinearLayout>
+
+    <com.aprido.cintabogor.widget.CustomTextView
+        android:id="@+id/tv_title_item_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/tv_title_item_main"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        app:customFont="HelveticaLTStd-LightCond.otf"/>
+
+</LinearLayout>

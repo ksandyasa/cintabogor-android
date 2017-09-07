@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="anchor_point">250dp</dimen>
+    <dimen name="bottom_sheet_peek_height">@dimen/abc_action_bar_default_height_material</dimen>
+    <dimen name="civ_pict_item_main">48dp</dimen>
+    <dimen name="civ_pict_item_nearby">66dp</dimen>
+    <dimen name="iv_pict_item_navigationview">24dp</dimen>
+    <dimen name="header_navigation_view">152dp</dimen>
+    <dimen name="list_item_content_list_height">228dp</dimen>
+</resources>

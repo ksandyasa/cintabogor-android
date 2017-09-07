@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_item_tutorial"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:contentDescription=""
+        android:scaleType="fitCenter"
+        android:src="@drawable/cintabogor"
+        android:layout_centerInParent="true"/>
+
+    <com.aprido.cintabogor.widget.CustomButton
+        android:id="@+id/btn_item_tutorial"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:text="MULAI"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:customButtonFont="HelveticaLTStd-LightCond.otf"/>
+
+</RelativeLayout>
